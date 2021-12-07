@@ -1,6 +1,7 @@
 let loc = document.getElementById("location");
-let tempicon = Document.getElementById("temp-icon");
-let tempvalue = document.getElementById("climate");
+let tempicon = document.getElementById("temp-icon");
+let tempvalue = document.getElementById("temp-value");
+let climate = document.getElementById("climate");
 let iconfile;
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
@@ -10,7 +11,7 @@ const searchButton = document.getElementById("search-button");
 window.addEventListener("load", () => {
     let long;
     let lat;
-    const proxy="https://cors-anywhere.herokuapp.com/";
+    const proxy = "https://cors-anywhere.herokuapp.com/";
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition((position) => {
             long = position.coords.longitude;
@@ -21,18 +22,20 @@ window.addEventListener("load", () => {
             fetch(api).then((response) => {
                 return response.json();
             })
-            .then(data => 
-                {
+                .then(data => {
                     const { name } = data;
                     const { feels_like } = data.main;
                     const { id, main } = data.weather[0];
 
                     loc.textContent = name;
-                    cancelAnimationFrame.textContent = main;
+                    climate.textContent = main;
                     tempvalue.textContent = Math.round(feels_like - 273)
 
 
                 })
         }
 
+
+        )
+    }
 })
