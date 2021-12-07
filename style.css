@@ -3,9 +3,10 @@
     margin: 0;
     padding: 0;
 }
+
 body{
     height: 100px;
-    background-color: pink;
+    background-color: #263859;
 }
 #search-form{
     display: flex;
@@ -46,7 +47,7 @@ body{
 main{
     padding: 20px;
     margin-top: 10px;
-    background-color: aqua;
+    background-color: rgb(2, 124, 124);
     border-radius: 20px;
     width: 360px;
     height: 360px;
@@ -71,7 +72,7 @@ main{
     color: aliceblue;
     background: #ff6768;
     border-color: red;
-    transition: all0.4s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 #search-input{
     width: 260px;
