@@ -1,43 +1,49 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
-<title>Online Weather Forcasting</title>
+<html>
+    <title>Online Weather Forcast</title>
+    <head>
+        <link rel="stylesheet" href ="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
 
-<body>
-    <form id="search-form">
-        <input type="search" placeholder="Enter City Name" id="search-input" required autocomplete="off">
-        <br>
+        <form id="search-form">
+            <input type="search"
+            placeholder="Enter City Name"
+            id="search-input"
+            required
+            autocomplete="off"
+            />
+            <br>
         </br>
         <button id="search-button">Search</button>
 
-    </form>
-
-    <main id="app-container">
-        <div id="location">
-            <p>-------</p>
-        </div>
-        <div id="temp">
-            <img id="temp-icon" src="sun.png" alt="">
-            <p><span id="temp-value">----</span> <span id="temp-unit">&#176c</span></p>
-        </div>
+        </form>
 
 
-        <div id="climate">
-            <p>-------</p>
-        </div>
-    </main>
-    
+        <main id="app-container">
+            <div id="location">
+                <p>-------</p>
+            </div>
+                <div id="temp">
+                    <img id="temp-icon" src="Clear.png" alt="">
+                    <p><span id="temp-value">-----</span> <span id="temp-unit" >&#176c</span> </p>
+                </div>
 
-    <script src="weather.js">
+                <div id="climate">
+                    <p>------</p>
+                </div>
 
-    </script>
-</body>
+
+
+
+
+        </main>
+
+<script src="weather.js">
+
+</script>
+    </body>
 
 </html>
