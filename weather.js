@@ -42,7 +42,7 @@ const getweather=async(city)=>
             tempicon.src="Drizzle.png"
         }
         else if(id>500 && id<600){
-            tempicon.src="rain.png"
+            tempicon.src="Rain.png"
         }
         else if(id>600 && id<700){
             tempicon.src="Snowflake.png"
@@ -59,7 +59,7 @@ const getweather=async(city)=>
     }
 
 catch(error){
-    alert('city not found');
+    alert('City not found!!');
 }
 };
 
@@ -98,7 +98,7 @@ window.addEventListener("load", () => {
                         tempicon.src="Rain.png"
                     }
                     else if(id>600 && id<700){
-                        tempicon.src="Snow.png"
+                        tempicon.src="Snowflake.png"
                     }
                     else if(id>700 && id<800){
                         tempicon.src="Atmosphere.png"
