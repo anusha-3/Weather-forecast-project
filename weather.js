@@ -42,10 +42,10 @@ const getweather=async(city)=>
             tempicon.src="Drizzle.png"
         }
         else if(id>500 && id<600){
-            tempicon.src="Rain.png"
+            tempicon.src="rain.png"
         }
         else if(id>600 && id<700){
-            tempicon.src="Snow.png"
+            tempicon.src="Snowflake.png"
         }
         else if(id>700 && id<800){
             tempicon.src="Atmosphere.png"
